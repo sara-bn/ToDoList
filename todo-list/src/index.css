@@ -2,3 +2,60 @@ body {
 	margin: 0;
 	font-family: sans-serif;
 }
+
+ul {
+	list-style: none;
+	width: 90%;
+	margin: 2rem auto;
+	padding: 0;
+}
+
+li {
+	margin: 1rem 0;
+	padding: 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+form {
+	width: 50%;
+	margin: 2rem auto;
+}
+
+label,
+input {
+	display: block;
+	width: 100%;
+}
+
+label {
+	font-weight: bold;
+}
+
+input {
+	border: 1px solid #ccc;
+	padding: 0.25rem;
+	margin: 0.5rem;
+}
+
+input:focus {
+	outline: none;
+	border-color: #50005a;
+}
+
+button {
+	background: #50005a;
+	border: 1px solid #50005a;
+	color: white;
+	padding: 0.5rem 1.5rem;
+}
+
+button:hover,
+button:active {
+	background: #6a0a77;
+	border-color: #6a0a77;
+}
+.error {
+	color: red;
+}
