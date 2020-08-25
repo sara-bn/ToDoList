@@ -6,8 +6,11 @@ import { Todo } from './Todo.model';
 const App: React.FC = () => {
 	const [todos, setTodos] = useState<Todo[]>([]);
 
-	const todoAddHandler = (text: string) => {
-		setTodos((prevTodos) => [...prevTodos, { id: Math.random().toString(), description: text, priority: 1 }]);
+	const todoAddHandler = (text: string, priority: number) => {
+		setTodos((prevTodos) => [
+			...prevTodos,
+			{ id: Math.random().toString(), description: text, priority: priority },
+		]);
 	};
 
 	return (
